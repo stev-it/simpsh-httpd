@@ -7,5 +7,5 @@ RUN apk --no-cache add socat git \
 && chmod -R a+x *
 
 VOLUME /app
-CMD ["/app/start-socat.sh","-d", "&"]
+CMD ["/app/start-socat.sh","-d","&&","sleep","infinity"]
 
